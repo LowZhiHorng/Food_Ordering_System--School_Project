@@ -1,6 +1,7 @@
-# Food Ordering System — School Project
+# 🍢 Food Ordering System — School Project
 
-> SPM Computer Science Project (2024/2025) — A PHP & MySQL-based food ordering web application for school use.
+> A web-based food ordering platform for "Sate King", developed as a 2024/2025 SPM Computer Science project.  
+> Built with **PHP**, **MySQL**, **HTML/CSS**, and **JavaScript**.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Language](https://img.shields.io/badge/language-PHP-yellow)
@@ -8,120 +9,155 @@
 
 ---
 
-## 📖 Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Database](#database)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-- [Author](#author)
+## 📖 Introduction
+The **Food Ordering System** allows customers to browse menus, place orders, and track their order status online.  
+It includes an **Admin Panel** for managing menu items, orders, and users, making it a complete small-scale restaurant management system.
+
+This project is designed to run locally using **XAMPP** or similar PHP/MySQL environments.
 
 ---
 
-## Introduction
-This project is a **school-level food ordering system** built with **PHP**, **HTML/CSS**, **JavaScript**, and **MySQL**.  
-It allows **students to order food online** and **administrators to manage menu items, orders, and staff accounts**.
+## ✨ Features
+### 👤 For Customers
+- User registration & login
+- Browse menu with images & prices
+- Add items to cart
+- Place orders and view order history
+
+### 🛠 For Admins
+- Admin login
+- Add, edit, or delete menu items
+- Manage customer orders
+- View registered users
 
 ---
 
-## Features
-- **User Registration & Login**
-- **Admin Login & Dashboard**
-- **Menu Browsing** (with images)
-- **Shopping Cart** & Checkout
-- **Order History**
-- **Food Management** (add, edit, delete menu items)
-- **Staff Management**
-- **Responsive UI**
+## 📂 Project Structure
+Food_Ordering_System--School_Project/
+│
+├── gambar/ # Images (menu items, icons, banners)
+│ ├── sate/ # Food images
+│ └── system/ # UI and button icons
+│
+├── spp_sateKing/ # Main PHP source code
+│ ├── bakul_saya.php # Customer cart
+│ ├── borang_daftar.php # Registration form
+│ ├── borang_login.php # User login
+│ ├── borang_loginAdmin.php # Admin login
+│ ├── menu.php # Menu listing
+│ ├── edit_makanan.php # Edit menu item
+│ ├── ... # Other related files
+│
+├── spp_sateking.sql # MySQL database dump
+└── README.md # Documentation
 
 ---
 
-## Tech Stack
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** PHP
-- **Database:** MySQL (via XAMPP)
-- **Server:** Apache (XAMPP)
-- **Version Control:** GitHub
+## 🛠 Installation Guide
+1. **Download & Install XAMPP**  
+   [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
 
----
+2. **Clone or Download the Project**  
+   Place the folder inside `htdocs`:C:\xampp\htdocs\Food_Ordering_System
 
-## Installation
+3. **Import the Database**  
+   - Open **phpMyAdmin** via `http://localhost/phpmyadmin`
+   - Create a new database (e.g., `spp_sateking`)
+   - Import `spp_sateking.sql` from the project folder
 
-### 1️⃣ Prerequisites
-- [XAMPP](https://www.apachefriends.org/)
-- PHP 7.4+
-- MySQL
-
-### 2️⃣ Setup Steps
-1. **Clone or Download the Project**
-   ```bash
-   git clone https://github.com/LowZhiHorng/Food_Ordering_System--School_Project.git
+4. **Configure Database Connection**  
+   Open `spp_sateKing/db_conn.php` and ensure:
+   ```php
+   $servername = "localhost";
+   $username   = "root";
+   $password   = "";
+   $dbname     = "spp_sateking";
    
-2. **Move Project to XAMPP htdocs**
-   ```bash
-   mv Food_Ordering_System--School_Project /xampp/htdocs/
-   
-3. **Import Database**
-- Open phpMyAdmin
-- Create a database:
-  ```sql
-  CREATE DATABASE spp_sateking;
-- Import spp_sateking.sql from the project folder.
-
-4. **Configure Database Connection**
-- Edit db_conn.php with your MySQL username/password.
-
 5. **Run the Application**
-- Start Apache & MySQL in XAMPP
-- Visit:
-  ```bash
-  http://localhost/Food_Ordering_System--School_Project/spp_sateKing
+   Visit:
+   ```bash
+   http://localhost/Food_Ordering_System--School_Project/spp_sateKing/
 
 ---
 
-## Usage
-**User**
-1. Register using borang_daftar.php
-2. Login
-3. Browse menu and add items to cart
-4. Checkout and confirm orders
+## 🚀 Usage
+**Default Credentials**
+(These can be changed in the database via phpMyAdmin)
 
-**Admin**
-1. Login via borang_loginAdmin.php
-2. Manage menu, orders, and staff accounts
-3. View reports and order details
+- *Admin*
+Username: admin
+Password: admin123
 
----
-
-## Database
-**Main tables include:**
-- users — customer accounts
-- admin — admin accounts
-- menu — food items
-- orders — customer orders
-- staff — staff info
+- *Customer*
+Create an account via the registration form.
 
 ---
 
-## Troubleshooting
-- Blank Page: Check PHP error logs and ensure display_errors is enabled in php.ini.
-- Database Error: Verify database name, username, and password in db_conn.php.
-- Images Not Loading: Ensure gambar/ is in the correct path relative to PHP files.
+## 🗄 Database Schema
+The system uses a MySQL database with the following tables:
+
+1. **admin**
+
+| Column       | Type         | Description             |
+| ------------ | ------------ | ----------------------- |
+| login\_id    | varchar(50)  | Admin username          |
+| kata\_laluan | varchar(50)  | Password (hashed/plain) |
+| nama         | varchar(255) | Admin name              |
+
+
+2. **makanan** (Menu Items)
+
+| Column     | Type         | Description            |
+| ---------- | ------------ | ---------------------- |
+| kodMakanan | varchar(3)   | Menu item code         |
+| makanan    | varchar(255) | Name of the food       |
+| harga      | double       | Price                  |
+| gambar     | varchar(50)  | Image filename         |
+| login\_id  | varchar(50)  | Admin who added/edited |
+
+
+3. **maklumat_pesanan** (Order Details)
+
+| Column     | Type       | Description      |
+| ---------- | ---------- | ---------------- |
+| noPesanan  | varchar(5) | Order number     |
+| kodMakanan | varchar(3) | Menu item code   |
+| kuantiti   | int(3)     | Quantity ordered |
+
+
+4. **pelanggan** (Customers)
+
+| Column    | Type         | Description           |
+| --------- | ------------ | --------------------- |
+| noTelefon | varchar(12)  | Customer phone number |
+| nama      | varchar(255) | Customer name         |
+
+
+5. **pesanan** (Orders)
+
+| Column    | Type        | Description           |
+| --------- | ----------- | --------------------- |
+| noPesanan | varchar(5)  | Order number          |
+| tarikh    | date        | Order date            |
+| noTelefon | varchar(12) | Customer phone number |
+
+
 
 ---
 
-## License
+## ❗ Troubleshooting
+
+**Blank page / PHP errors** → Enable PHP error reporting in *php.ini*
+**Database connection failed** → Check *db_conn.php* credentials
+**Images not loading** → Ensure the *gambar/* folder remains in the correct relative path
+
+---
+
+## 📜 License
 **This project is licensed under the MIT License.**
 
 ---
 
-## Author
-- **Low Zhi Horng**
-- **GitHub: LowZhiHorng**
-- **Profile:**
-```bash
-https://github.com/LowZhiHorng
-```
+## 👤 Author
+**Low Zhi Horng**
+**📂 GitHub: ![LowZhiHorng](https://github.com/LowZhiHorng)**
