@@ -160,4 +160,4 @@ The system uses a MySQL database with the following tables:
 
 ## 👤 Author
 **Low Zhi Horng**
-**📂 GitHub: ![LowZhiHorng](https://github.com/LowZhiHorng)**
+**📂 GitHub: LowZhiHorng[https://github.com/LowZhiHorng]**
