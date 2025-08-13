@@ -38,34 +38,6 @@ This project is designed to run locally using **XAMPP** or similar PHP/MySQL env
 ---
 
 ## 📂 Project Structure
-Food_Ordering_System--School_Project/
-│
-├── gambar/ # Images (menu items, icons, banners)
-|
-│ ├── sate/ # Food images
-|
-│ └── system/ # UI and button icons
-│
-├── spp_sateKing/ # Main PHP source code
-|
-│ ├── bakul_saya.php # Customer cart
-|
-│ ├── borang_daftar.php # Registration form
-|
-│ ├── borang_login.php # User login
-|
-│ ├── borang_loginAdmin.php # Admin login
-|
-│ ├── menu.php # Menu listing
-|
-│ ├── edit_makanan.php # Edit menu item
-|
-│ ├── ... # Other related files
-|
-│
-├── spp_sateking.sql # MySQL database dump
-|
-└── README.md # Documentation
 
 ---
 
