@@ -4,13 +4,13 @@
 > Built with **PHP**, **MySQL**, **HTML/CSS**, and **JavaScript**.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![GitHub](https://img.shields.io/badge/GitHub-Food_Ordering_System--School_Project-black?logo=github)](https://github.com/LowZhiHorng/Food_Ordering_System--School_Project)
 [![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)](https://www.php.net/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![XAMPP](https://img.shields.io/badge/XAMPP-FB7A24?logo=xampp&logoColor=white)](https://www.apachefriends.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-Food_Ordering_System--School_Project-black?logo=github)](https://github.com/LowZhiHorng/Food_Ordering_System--School_Project)
 
 ---
 
