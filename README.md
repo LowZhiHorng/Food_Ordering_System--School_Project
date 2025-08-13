@@ -125,16 +125,16 @@ Food_Ordering_System--School_Project/
 **Default Credentials**
 (These can be changed in the database via phpMyAdmin)
 
-*Admin*
+Admin
 
-Username: admin
+> Username: *admin*
 
-Password: admin123
+> Password: *admin123*
 
 
-*Customer*
+Customer
 
-Create an account via the registration form.
+> Create an account via the registration form.
 
 ---
 
