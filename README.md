@@ -160,4 +160,5 @@ The system uses a MySQL database with the following tables:
 
 ## 👤 Author
 **Low Zhi Horng**
-**📂 GitHub: LowZhiHorng[https://github.com/LowZhiHorng]**
+
+**📂 GitHub: [![GitHub](https://img.shields.io/badge/GitHub-LowZhiHorng-black?logo=github)](https://github.com/LowZhiHorng)**
