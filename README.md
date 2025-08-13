@@ -69,7 +69,7 @@ Food_Ordering_System--School_Project/
    [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
 
 2. **Clone or Download the Project**  
-   Place the folder inside `htdocs`:C:\xampp\htdocs\Food_Ordering_System
+   Place the folder inside `htdocs:C:\xampp\htdocs\Food_Ordering_System`
 
 3. **Import the Database**  
    - Open **phpMyAdmin** via `http://localhost/phpmyadmin`
@@ -95,13 +95,13 @@ Food_Ordering_System--School_Project/
 **Default Credentials**
 (These can be changed in the database via phpMyAdmin)
 
-- *Admin*
-Username: admin
+*Admin*
+-Username: admin
 
-Password: admin123
+-Password: admin123
 
 
-- *Customer*
+*Customer*
 Create an account via the registration form.
 
 ---
