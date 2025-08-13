@@ -41,11 +41,8 @@ This project is designed to run locally using **XAMPP** or similar PHP/MySQL env
 ```bash
 Food_Ordering_System--School_Project/
 └── Food_Ordering_System--School_Project-main
-|
 ├── README.md # Project documentation
-|
 ├── gambar/ # Images used in the system
-|
 │ ├── sate/ # Menu item images (Sate dishes)
 │ │ ├── sateAyam.jpg # Chicken satay image
 │ │ ├── sateBabi.jpg # Pork satay image
@@ -53,14 +50,13 @@ Food_Ordering_System--School_Project/
 │ │ ├── sateKambing.jpg # Goat satay image
 │ │ ├── sateLembu.jpg # Beef satay image
 │ │ └── sateSotong.jpg # Squid satay image
-| |
 │ └── system/ # UI icons & banners
-│ | ├── Banner.png # Main website banner
-│ | ├── admin.png # Admin icon
-│ | ├── bakul.png # Cart icon
-│ | ├── daftar.png # Register icon
-│ | ├── delete.png # Delete icon
-│ | └── edit.png # Edit icon
+│ ├── Banner.png # Main website banner
+│ ├── admin.png # Admin icon
+│ ├── bakul.png # Cart icon
+│ ├── daftar.png # Register icon
+│ ├── delete.png # Delete icon
+│ └── edit.png # Edit icon
 │
 ├── spp_sateKing/ # Main PHP source code
 │ ├── bakul_saya.php # Customer cart page
@@ -92,8 +88,8 @@ Food_Ordering_System--School_Project/
 ├── spp_sateking.sql # MySQL database dump
 │
 └── testCase/ # Testing resources
-| ├── sate-ayam.jpg # Sample image for testing
-| └── staf.csv # Sample staff CSV file
+├── sate-ayam.jpg # Sample image for testing
+└── staf.csv # Sample staff CSV file
 ```
 
 ---
