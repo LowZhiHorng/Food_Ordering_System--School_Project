@@ -15,7 +15,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Database](#database)
-- [File Structure](#file-structure)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 - [Author](#author)
@@ -104,28 +103,6 @@ It allows **students to order food online** and **administrators to manage menu 
 - menu — food items
 - orders — customer orders
 - staff — staff info
-
----
-
-## File Structure
-
-Food_Ordering_System--School_Project/
-│   README.md
-│   spp_sateking.sql
-│
-├── gambar/              # Images (food + system UI)
-│   ├── sate/
-│   └── system/
-│
-├── spp_sateKing/         # PHP application files
-│   ├── index.php
-│   ├── borang_daftar.php
-│   ├── borang_login.php
-│   ├── menu.php
-│   ├── bakul_saya.php
-│   ├── ...
-│
-└── testCase/             # Test images and data
 
 ---
 
