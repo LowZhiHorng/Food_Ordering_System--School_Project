@@ -119,9 +119,9 @@ It allows **students to order food online** and **administrators to manage menu 
 ---
 
 ## Author
-**Low Zhi Horng**
-**GitHub: LowZhiHorng**
-**Profile:**
+- **Low Zhi Horng**
+- **GitHub: LowZhiHorng**
+- **Profile:**
 ```bash
 https://github.com/LowZhiHorng
 ```
