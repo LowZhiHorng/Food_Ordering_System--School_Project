@@ -40,22 +40,56 @@ This project is designed to run locally using **XAMPP** or similar PHP/MySQL env
 ## 📂 Project Structure
 ```bash
 Food_Ordering_System--School_Project/
-│
-├── gambar/ # Images (menu items, icons, banners)
-│ ├── sate/ # Food images
-│ └── system/ # UI and button icons
+└── Food_Ordering_System--School_Project-main
+├── README.md # Project documentation
+├── gambar/ # Images used in the system
+│ ├── sate/ # Menu item images (Sate dishes)
+│ │ ├── sateAyam.jpg # Chicken satay image
+│ │ ├── sateBabi.jpg # Pork satay image
+│ │ ├── sateIkan.jpeg # Fish satay image
+│ │ ├── sateKambing.jpg # Goat satay image
+│ │ ├── sateLembu.jpg # Beef satay image
+│ │ └── sateSotong.jpg # Squid satay image
+│ └── system/ # UI icons & banners
+│ ├── Banner.png # Main website banner
+│ ├── admin.png # Admin icon
+│ ├── bakul.png # Cart icon
+│ ├── daftar.png # Register icon
+│ ├── delete.png # Delete icon
+│ └── edit.png # Edit icon
 │
 ├── spp_sateKing/ # Main PHP source code
-│ ├── bakul_saya.php # Customer cart
-│ ├── borang_daftar.php # Registration form
-│ ├── borang_login.php # User login
-│ ├── borang_loginAdmin.php # Admin login
-│ ├── menu.php # Menu listing
-│ ├── edit_makanan.php # Edit menu item
-│ └── ... # Other related files
+│ ├── bakul_saya.php # Customer cart page
+│ ├── borang_daftar.php # Customer registration form
+│ ├── borang_login.php # Customer login page
+│ ├── borang_loginAdmin.php # Admin login page
+│ ├── borang_makanan.php # Add/edit menu item form
+│ ├── db_conn.php # Database connection settings
+│ ├── edit_makanan.php # Edit menu item processing
+│ ├── footer.php # Website footer
+│ ├── header.php # Website header
+│ ├── index.php # Landing page
+│ ├── logout.php # Logout script
+│ ├── main.php # Main dashboard page
+│ ├── maklumat_pesanan.php # Order details page
+│ ├── menu.php # Menu listing page
+│ ├── nav.php # Navigation bar (user)
+│ ├── nav2.php # Navigation bar (admin)
+│ ├── padam_makanan.php # Delete menu item
+│ ├── proses_daftar.php # Process registration form
+│ ├── proses_login.php # Process customer login
+│ ├── proses_makanan.php # Process menu item submission
+│ ├── proses_muatnaik.php # Handle file uploads (e.g., food images)
+│ ├── senarai_makanan.php # List all menu items (admin)
+│ ├── senarai_pesanan.php # List all customer orders (admin)
+│ ├── senarai_staf.php # List all staff (admin)
+│ └── session.php # Session management
 │
 ├── spp_sateking.sql # MySQL database dump
-└── README.md # Documentation
+│
+└── testCase/ # Testing resources
+├── sate-ayam.jpg # Sample image for testing
+└── staf.csv # Sample staff CSV file
 ```
 
 ---
