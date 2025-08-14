@@ -128,7 +128,7 @@ Food_Ordering_System--School_Project/
 
 #### 🛠 Admin  
 - **Username:** `admin`  
-- **Password:** `admin123`  
+- **Password:** `@9485_/4#`  
 
 #### 👤 Customer  
 - Create an account via the registration form in the application.
