@@ -191,7 +191,7 @@ The system uses a MySQL database with the following tables:
 
 **Blank page / PHP errors** → Enable PHP error reporting in *php.ini*
 
-**Database connection failed** → Check *db_conn.php* credentials
+**Database connection failed** → Check `db_conn.php` credentials
 
 **Images not loading** → Ensure the `gambar/` folder remains in the correct relative path
 
