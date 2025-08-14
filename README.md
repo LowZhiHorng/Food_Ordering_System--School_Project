@@ -99,14 +99,14 @@ Food_Ordering_System--School_Project/
    [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
 
 2. **Clone or Download the Project**  
-   Place the folder inside `htdocs:C:\xampp\htdocs\Food_Ordering_System`
+   Place the folder inside `htdocs: C:\xampp\htdocs\Food_Ordering_System`
 
-3. **Import the Database**  
+4. **Import the Database**  
    - Open **phpMyAdmin** via `http://localhost/phpmyadmin`
    - Create a new database (e.g., `spp_sateking`)
    - Import `spp_sateking.sql` from the project folder
 
-4. **Configure Database Connection**  
+5. **Configure Database Connection**  
    Open `spp_sateKing/db_conn.php` and ensure:
    ```php
    $servername = "localhost";
@@ -114,7 +114,7 @@ Food_Ordering_System--School_Project/
    $password   = "";
    $dbname     = "spp_sateking";
    
-5. **Run the Application**
+6. **Run the Application**
    Visit:
    ```bash
    http://localhost/Food_Ordering_System--School_Project/spp_sateKing/
@@ -189,7 +189,7 @@ The system uses a MySQL database with the following tables:
 
 ## ❗ Troubleshooting
 
-**Blank page / PHP errors** → Enable PHP error reporting in *php.ini*
+**Blank page / PHP errors** → Enable PHP error reporting in `php.ini`
 
 **Database connection failed** → Check `db_conn.php` credentials
 
