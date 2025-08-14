@@ -193,7 +193,7 @@ The system uses a MySQL database with the following tables:
 
 **Database connection failed** → Check *db_conn.php* credentials
 
-**Images not loading** → Ensure the *gambar/* folder remains in the correct relative path
+**Images not loading** → Ensure the `gambar/` folder remains in the correct relative path
 
 ---
 
